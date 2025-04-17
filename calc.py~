@@ -24,24 +24,24 @@ def is_operand(token: str) -> bool:
 # This has been implemented for you, you don't need to 
 # modify it.
 # 
-# Returns [op1] [operator] [op2]
-def apply_operation(op1: float, op2: float, operator: str) -> float:
+# Returns [op1] [operand] [op2]
+def apply_operation(op1: float, op2: float, operand: str) -> float:
     if not isinstance(op1, float):
         raise ValueError(f"Expected first operand of type float, got {type(op1)}")
     if not isinstance(op2, float):
         raise ValueError(f"Expected second operand of type float, got {type(op2)}")
-    if not isinstance(operator, str) or len(operator) != 1:
-        raise ValueError(f"Expected operator of type string and len 1, got {type(operator)} or len {len(operator)}: \"{operator}\"")
-    if operator == "+":
+    if not isinstance(operand, str) or len(operand) != 1:
+        raise ValueError(f"Expected operator of type string and len 1, got {type(operand)} or len {len(operand)}: \"{operand}\"")
+    if operand == "+":
         return op1 + op2
-    elif operator == "-":
+    elif operand == "-":
         return op1 - op2
-    elif operator == "*":
+    elif operand == "*":
         return op1 * op2
-    elif operator == "/":
+    elif operand == "/":
         return op1 / op2
     else:
-        raise ValueError(f"Illegal operator {operator}")
+        raise ValueError(f"Illegal operand {operand}")
 
 # Takes a list of tokens produced by `tokenize_expression`
 # and evaluates them to produce a result. Returns that
