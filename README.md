@@ -129,8 +129,8 @@ Some helper functions are provided to make implementation easier.
 # This has been implemented for you, you don't need to 
 # modify it.
 # 
-# Returns [op1] [operator] [op2]
-def apply_operation(op1: float, op2: float, operator: str) -> float:
+# Returns [op1] [operand] [op2]
+def apply_operation(op1: float, op2: float, operand: str) -> float:
 
 # Helper function that returns true if the given string is
 # a valid operator.
@@ -147,9 +147,9 @@ def is_operator(token: string) -> bool:
 def is_operand(token: string) -> bool:
 ```
 
-### `apply_operator(op1: float, op2: float, operator: str) -> float`
+### `apply_operator(op1: float, op2: float, operand: str) -> float`
 
-This function returns \[op1\] \[operator\] \[op2\]. For example,
+This function returns \[op1\] \[operand\] \[op2\]. For example,
 `apply_operator(10,2,'/')` would return `5`.
 
 ### `is_operator(token: str) -> bool`
