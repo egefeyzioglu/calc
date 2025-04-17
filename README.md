@@ -171,8 +171,7 @@ These tests are:
 2. tokenize_multiple_spaces
 3. tokenize_empty_string
 4. evaluate_simple
-5. evaluate_single_operand
+5. evaluate_harder
 6. evaluate_operand_order
-7. end_to_end_1
-8. end_to_end_2
+7. end_to_end
 
